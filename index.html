@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <title>Lanches no framework Bootstrap</title>
+</head>
+    <style>
+
+        body {
+            
+            font-family: 'Lobster', cursive;
+            background-color: rgba(0,0,0,0.9);
+            border: 1px dashed hotpink;
+            margin: 0;
+            padding: 0;
+        }
+       
+        p{
+            color:  yellow;
+            text-shadow: .5px .5px black;
+        }
+
+        h5, h6 {
+            color: rgba(255,255,255, 0.8);
+        }
+
+        .cabecalho {
+            background-color: antiquewhite;
+            border-radius: 20px;
+        }
+
+        .card-body h3 {
+            color: rgb(173, 47, 47);
+            text-shadow: .5px .5px black;
+        }
+
+        .carousel-inner .carousel-item img {
+            margin: 0 auto;
+            min-width: 90%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .img-moto > img{
+            width: 30px;
+        }
+
+        .card-title img {
+            width: 320px;
+        }
+
+        .card-img-overlay:hover { height: 400px;
+            transform: scale(1.20);
+            padding: 2rem;
+        }
+        .card-img-overlay {
+            margin-bottom: 18%;
+        }
+        .card-footer a {
+            color: #515151;
+            text-decoration: none;
+            text-shadow: 0.3px 0.3px #515151;
+           
+        }
+
+        .card-footer a:hover {
+            transform: scale(1,20);
+            cursor: pointer;
+            text-shadow: none;
+        }
+
+        
+    </style>
+
+<body>
+
+    <div class="container">
+
+        <div class="row mx-0">
+            <div class="col-lg col-md col-sm mr-">
+                
+                <header class="cabecalho">
+                    <h1 class="d-flex justify-content-center py-2 my-3">Lanches Nós Merece</h1>
+                </header>
+             
+                
+                <div id="carousel-lanches" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div  data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-50" src="./assets/lanche01.avif" alt=""/>
+                            <div class="carousel-caption">
+                                <p>Lanche: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, quis pariatur dignissimos ab esse quae veritatis inventore possimus nisi maxime, quo ducimus rem sequi excepturi quidem accusantium? Hic, veritatis exercitationem.</p>
+                            </div>                            
+                        </div>
+                        
+                        <div  data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-50" src="./assets/lanche02-frango.avif" alt="">
+                            <div class="carousel-caption">
+                                <p>Lanche05</p>
+                            </div>  
+                        </div>
+                        
+                        <div  data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-50"  src="./assets/lanche-vegano02-beterraba.avif" alt="">
+                            <div class="carousel-caption">
+                                <p>Lanche-vegano</p>
+                            </div>
+                        </div>
+                        
+                        <div  data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-50"  src="./assets/lanche03-queijo.avif" alt="">
+                            <div class="carousel-caption">
+                                <p>Lanche-vegano</p>
+                            </div>
+                        </div>
+                        
+                        <button type="button" data-bs-target="#carousel-lanches" class="carousel-control-prev" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+        
+                        <button type="button" data-bs-target="#carousel-lanches" class="carousel-control-next" data-bs-slide="next" >
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+        
+                        <div class="carousel-indicators">
+                            <button class="active"  type="button" data-bs-target="#carousel-lanches" data-bs-slide-to="0" ></button>
+                            <button type="button" data-bs-target="#carousel-lanches" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel-lanches" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#carousel-lanches" data-bs-slide-to="3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="row mx-0">
+            <div class="col d-flex justify-content-center">
+                <h5 class="img-moto mt-2">Entregamos 
+                    <img src="./assets/motinha.png" alt="">
+                </h5>            
+            </div>
+        </div>
+          
+        <div class="row mx-0">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card m-3">
+                    <header class="card-header">
+                    </header>
+                    <img src="./assets/lanche01.avif" alt="">
+                    <div class="card-body card-img-overlay">
+                        <h3 class="card-title">Card1</h3>
+                        <p>Loremam dfdhfu </p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="https://www.google.com" target="_blank">Lanche vem-ser-feliz</a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card m-3">
+                    <header class="card-header"></header> 
+                    <img src="./assets/lanche04-rucula.avif" alt=""/>
+                    <div class="card-body card-img-overlay">
+                        <h3 class="card-title">Card2</h3>
+                        <p>Loremam dfdhfu </p>    
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#">Lanche Delícia</a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card m-3">
+                    <header class="card-header"></header>
+                    <img src="./assets/lanche-vegano01.jpg" alt="">
+                    <div class="card-body card-img-overlay">
+                        <h3 class="card-title">Card3</h3>
+                        <p>Loremam dfdhfu </p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#">Lanche tocumFome</a>
+                    </footer>
+                   
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card m-3">
+                    <header class="card-header"></header>
+                    <img src="./assets/lanche04-rucula.avif" alt="">
+                    <div class="card-body card-img-overlay">
+                        <h3 class="card-title">Card4</h3>
+                        <p>Loremam dfdhfu </p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#">Lanche tocumFome</a>
+                    </footer>
+                   
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card m-3">
+                    <header class="card-header"></header>
+                    <img src="./assets/lanche04-rucula.avif" alt="">
+                    <div class="card-body card-img-overlay">
+                        <h3 class="card-title">Card5</h3>
+                        <p>Loremam dfdhfu </p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#">Lanche tocumFome</a>
+                    </footer>
+                   
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card m-3">
+                    <header class="card-header"></header>
+                    <img src="./assets/lanche-vegano01.jpg" alt="">
+                    <div class="card-body card-img-overlay">
+                        <h3 class="card-title">Card6</h3>
+                        <p>Loremam dfdhfu </p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#">Lanche tocumFome</a>
+                    </footer>
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row mx-0">
+            <div class="col">
+                <footer class=" d-flex justify-content-center my-2">
+
+                    <p>&copy; Lanchão - 30/05/2023 - Todos os direitos reservaduuuuuus</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+
+   
+</body>
+</html>
