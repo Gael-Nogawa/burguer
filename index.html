@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,500;1,400;1,500&display=swap" rel="stylesheet">
-    <title>Lanches no framework Bootstrap</title>
+    <title>Jhon's Burger! Bora comer!</title>
 </head>
     <style>
 
@@ -26,7 +26,7 @@
             text-shadow: .5px .5px black;
         }
 
-        h5, h6 {
+        h3, h6 {
             color: rgba(255,255,255, 0.8);
         }
 
@@ -35,7 +35,7 @@
             border-radius: 20px;
         }
 
-        .card-body h3 {
+        .card-body > h3 {
             color: rgb(173, 47, 47);
             text-shadow: .5px .5px black;
         }
@@ -45,6 +45,7 @@
             min-width: 90%;
             height: 320px;
             object-fit: cover;
+            object-position: center;
             border-radius: 20px;
         }
 
@@ -56,9 +57,11 @@
             width: 320px;
         }
 
-        .card-img-overlay:hover { height: 400px;
-            transform: scale(1.10);
-            padding: 2rem;
+        .card-img-overlay:hover { 
+            height: 80%;
+            transform: scale(1.02);
+            background-color: rgba(0,0,0,0.6);
+            
         }
         .card-img-overlay {
             margin-bottom: 18%;
@@ -76,7 +79,9 @@
             cursor: pointer;
             text-shadow: none;
         }
-
+        footer > p{
+            font-size: small;
+        }
         
     </style>
 
@@ -88,7 +93,7 @@
             <div class="col-lg col-md col-sm mr-">
                 
                 <header class="cabecalho">
-                    <h1 class="d-flex justify-content-center py-2 my-3">Lanchão</h1>
+                    <h1 class="d-flex justify-content-center py-2 my-3">Jhon's Burger</h1>
                 </header>
              
                 
@@ -142,9 +147,9 @@
 
         <div class="row mx-0">
             <div class="col d-flex justify-content-center">
-                <h5 class="img-moto mt-2">Entregamos 
+                <h3 class="img-moto mt-2">Entregamos 
                     <img src="./assets/motinha.png" alt="">
-                </h5>            
+                </h3>            
             </div>
         </div>
           
@@ -159,7 +164,8 @@
                         <p>Loremam dfdhfu </p>
                     </div>
                     <footer class="card-footer">
-                        <a href="https://www.google.com" target="_blank">Lanche vem-ser-feliz</a>
+                        <button type="button" class="btn btn-warning"><a href="https://www.google.com" target="_blank">Lanche vem-ser-feliz</a></button>
+                        
                     </footer>
                 </div>
             </div>
@@ -247,7 +253,7 @@
             <div class="col">
                 <footer class=" d-flex justify-content-center my-2">
 
-                    <p>&copy; Lanchão - 30/05/2023 - Todos os direitos reservaduuuuuus</p>
+                    <p>&copy; Gael Eiji Nogawa - 30/05/2023 - Todos os direitos reservaduuuuuus</p>
                 </footer>
             </div>
         </div>
